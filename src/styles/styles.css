@@ -33,6 +33,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.hero {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
 .hero__img-wrapper {
   margin-bottom: 2.5rem;
 }
@@ -42,9 +47,10 @@ body {
   color: #242742;
 }
 
-.content__title {
+.content__title,
+.completed__title {
   font-size: 40px;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .content__text {
@@ -69,4 +75,50 @@ body {
   width: 21px;
   height: 21px;
   margin-right: 16px;
+}
+
+label[for=email] {
+  display: block;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+input#email {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 16px 0 16px 48px;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+}
+
+.form__btn {
+  background-color: #242742;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 8px;
+  padding: 18px 46px 14px 48px;
+}
+
+.completed {
+  max-width: 327px;
+  margin: 149px auto 40px auto;
+  display: none;
+}
+
+.completed__img {
+  margin-bottom: 40px;
+}
+
+.completed__text {
+  margin-bottom: 263px;
+}
+
+.completed__btn {
+  background-color: #242742;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 8px;
+  padding: 18px 46px 14px 48px;
 }/*# sourceMappingURL=styles.css.map */
