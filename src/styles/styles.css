@@ -124,6 +124,11 @@ input#email {
   padding: 16px 0 16px 48px;
   border: 1px solid rgba(25, 24, 43, 0.25);
 }
+@media (min-width: 43.75rem) {
+  input#email {
+    padding: 16px 0 16px 16px;
+  }
+}
 
 .form__btn {
   background-color: #242742;
@@ -131,6 +136,11 @@ input#email {
   width: 100%;
   border-radius: 8px;
   padding: 18px 46px 14px 48px;
+}
+@media (min-width: 43.75rem) {
+  .form__btn {
+    padding: 18px 10px 18px 10px;
+  }
 }
 
 .completed {
