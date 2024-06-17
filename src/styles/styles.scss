@@ -35,15 +35,35 @@ button {
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  @include device(tablet) {
+    background-color: $primary-color1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .hero {
   max-width: 375px;
   margin: 0 auto;
+  @include device(tablet) {
+    display: grid;
+    place-items: center;
+    max-width: 700px;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    padding: 24px;
+    background-color: $neutral-color1;
+    border-radius: 36px;
+  }
 }
 
 .hero__img-wrapper {
   margin-bottom: 2.5rem;
+  @include device(tablet) {
+    order: 2;
+    margin-bottom: initial;
+  }
 }
 
 .hero__content-wrapper {
@@ -55,6 +75,9 @@ body {
 .completed__title {
   font-size: map-get($fonts, "$large1");
   margin-bottom: 1.5rem;
+  @include device(tablet ) {
+    font-size: map-get($fonts, "$medium1");
+  }
 }
 
 .content__text {

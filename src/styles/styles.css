@@ -32,14 +32,40 @@ body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
 }
+@media (min-width: 43.75rem) {
+  body {
+    background-color: #242742;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .hero {
   max-width: 375px;
   margin: 0 auto;
 }
+@media (min-width: 43.75rem) {
+  .hero {
+    display: grid;
+    place-items: center;
+    max-width: 700px;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 30px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 36px;
+  }
+}
 
 .hero__img-wrapper {
   margin-bottom: 2.5rem;
+}
+@media (min-width: 43.75rem) {
+  .hero__img-wrapper {
+    order: 2;
+    margin-bottom: initial;
+  }
 }
 
 .hero__content-wrapper {
@@ -51,6 +77,12 @@ body {
 .completed__title {
   font-size: 40px;
   margin-bottom: 1.5rem;
+}
+@media (min-width: 43.75rem) {
+  .content__title,
+  .completed__title {
+    font-size: 32px;
+  }
 }
 
 .content__text {
