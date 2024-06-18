@@ -104,15 +104,29 @@ body {
     }
 }
 
+.input__wrapper {
+  position: relative;
+}
+
+
 label[for="email"] {
-  display: block;
+  display: inline-block;
   font-size: map-get($fonts, "$small1");
   line-height: 1.5;
   margin-bottom: 8px;
   font-weight: 700;
 }
 
+.input__error {
+  position: absolute;
+  right: 0;
+  color: #FF6155;
+  font-size: map-get($fonts, "$small1");
+  font-weight: 700;
+}
+
 input#email {
+  display: block;
   width: 100%;
   margin-bottom: 24px;
   border-radius: 8px;
@@ -138,6 +152,11 @@ input#email {
   max-width: 327px;
   margin: 149px auto 40px auto;
   display: none;
+  @include device(tablet) {
+    background-color: $neutral-color1;
+    border-radius: 36px;
+    padding: 48px 64px 64px 64px;
+  }
 }
 
 .completed__img {
@@ -146,6 +165,9 @@ input#email {
 
 .completed__text {
   margin-bottom: 263px;
+  @include device(tablet) {
+    margin-bottom: initial;
+  }
 }
 
 .completed__btn {
