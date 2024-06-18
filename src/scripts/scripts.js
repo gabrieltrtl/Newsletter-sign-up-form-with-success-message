@@ -8,8 +8,14 @@ const completedContainer = document.querySelector('.completed');
 function showError() {
   if(emailInput.validity.valueMissing) {
     errorMsg.textContent = "Valid email required";
+    emailInput.style.border = "1px solid #FF6155";
+    emailInput.style.backgroundColor = "rgba(255,97, 85, 0.15)";
+    emailInput.style.color = "#FF6155";
   } else if (emailInput.validity.typeMismatch) {
     errorMsg.textContent = "Valid email required";
+    emailInput.style.border = "1px solid #FF6155";
+    emailInput.style.backgroundColor = "rgba(255,97, 85, 0.15)";
+    emailInput.style.color = "#FF6155";
   }
 }
 
@@ -21,6 +27,5 @@ form.addEventListener('submit', (event) => {
   } else {
     mainContainer.style.display = "none";
     completedContainer.style.display = "block";
-
   }
 })
