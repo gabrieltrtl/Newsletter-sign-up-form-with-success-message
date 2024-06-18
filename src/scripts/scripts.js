@@ -1,18 +1,26 @@
 const form = document.querySelector('.hero__form');
-console.log(form);
 const errorMsg = document.querySelector('.input__error');
-console.log(errorMsg);
 const emailInput = document.getElementById('email');
-console.log(emailInput);
+const mainContainer = document.querySelector('.hero');
+const completedContainer = document.querySelector('.completed');
+
 
 function showError() {
-  errorMsg.textContent = "Valid email required";
+  if(emailInput.validity.valueMissing) {
+    errorMsg.textContent = "Valid email required";
+  } else if (emailInput.validity.typeMismatch) {
+    errorMsg.textContent = "Valid email required";
+  }
 }
 
 
 form.addEventListener('submit', (event) => {
+  event.preventDefault();
   if (!emailInput.validity.valid) {
-    event.preventDefault();
     showError();
+  } else {
+    mainContainer.style.display = "none";
+    completedContainer.style.display = "block";
+
   }
 })

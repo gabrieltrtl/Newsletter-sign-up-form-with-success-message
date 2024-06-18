@@ -47,7 +47,7 @@ body {
   max-width: 375px;
   margin: 0 auto;
   @include device(tablet) {
-    display: grid;
+    display: none;
     place-items: center;
     max-width: 700px;
     grid-template-columns: 1fr 1.5fr;
@@ -77,6 +77,9 @@ body {
   margin-bottom: 1.5rem;
   @include device(tablet ) {
     font-size: map-get($fonts, "$medium1");
+  }
+  @include device(desktop) {
+    font-size: map-get($fonts, "$large2");
   }
 }
 
@@ -115,6 +118,7 @@ label[for="email"] {
   line-height: 1.5;
   margin-bottom: 8px;
   font-weight: 700;
+  vertical-align: top;
 }
 
 .input__error {
@@ -123,6 +127,7 @@ label[for="email"] {
   color: #FF6155;
   font-size: map-get($fonts, "$small1");
   font-weight: 700;
+  top: 2px;
 }
 
 input#email {
@@ -151,10 +156,11 @@ input#email {
 .completed {
   max-width: 327px;
   margin: 149px auto 40px auto;
-  display: none;
+  display: block;
   @include device(tablet) {
     background-color: $neutral-color1;
     border-radius: 36px;
+    max-width: 504px;
     padding: 48px 64px 64px 64px;
   }
 }
@@ -166,7 +172,8 @@ input#email {
 .completed__text {
   margin-bottom: 263px;
   @include device(tablet) {
-    margin-bottom: initial;
+    margin-bottom: 40px;
+    
   }
 }
 

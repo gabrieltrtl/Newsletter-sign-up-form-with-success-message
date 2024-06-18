@@ -47,7 +47,7 @@ body {
 }
 @media (min-width: 43.75rem) {
   .hero {
-    display: grid;
+    display: none;
     place-items: center;
     max-width: 700px;
     grid-template-columns: 1fr 1.5fr;
@@ -82,6 +82,12 @@ body {
   .content__title,
   .completed__title {
     font-size: 32px;
+  }
+}
+@media (min-width: 75rem) {
+  .content__title,
+  .completed__title {
+    font-size: 56px;
   }
 }
 
@@ -119,6 +125,7 @@ label[for=email] {
   line-height: 1.5;
   margin-bottom: 8px;
   font-weight: 700;
+  vertical-align: top;
 }
 
 .input__error {
@@ -127,6 +134,7 @@ label[for=email] {
   color: #FF6155;
   font-size: 12px;
   font-weight: 700;
+  top: 2px;
 }
 
 input#email {
@@ -159,12 +167,13 @@ input#email {
 .completed {
   max-width: 327px;
   margin: 149px auto 40px auto;
-  display: none;
+  display: block;
 }
 @media (min-width: 43.75rem) {
   .completed {
     background-color: #FFFFFF;
     border-radius: 36px;
+    max-width: 504px;
     padding: 48px 64px 64px 64px;
   }
 }
@@ -178,7 +187,7 @@ input#email {
 }
 @media (min-width: 43.75rem) {
   .completed__text {
-    margin-bottom: initial;
+    margin-bottom: 40px;
   }
 }
 
