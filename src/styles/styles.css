@@ -194,6 +194,11 @@ input#email {
     padding: 18px 10px 18px 10px;
   }
 }
+@media (min-width: 75rem) {
+  .completed {
+    padding: 48px 64px 64px 64px;
+  }
+}
 
 .completed__img {
   margin-bottom: 40px;

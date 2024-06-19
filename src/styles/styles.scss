@@ -167,6 +167,9 @@ input#email {
     max-width: 504px;
     padding: 18px 10px 18px 10px;
   }
+  @include device(desktop) {
+    padding: 48px 64px 64px 64px;
+  }
 }
 
 .completed__img {
