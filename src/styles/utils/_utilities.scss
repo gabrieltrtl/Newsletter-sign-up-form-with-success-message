@@ -24,3 +24,15 @@ $fonts: (
     }
   }
 }
+
+.btn {
+  background: $primary-color1;
+  color: $neutral-color1;
+  width: 100%;
+  border-radius: 8px;
+  padding: 18px 10px 18px 10px; 
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(to bottom, #FF6A3A, #FF527B);
+  }
+}

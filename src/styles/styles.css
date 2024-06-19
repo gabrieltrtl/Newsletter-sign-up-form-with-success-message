@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.btn {
+  background: #242742;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 8px;
+  padding: 18px 10px 18px 10px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: linear-gradient(to bottom, #FF6A3A, #FF527B);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,6 +69,14 @@ body {
     border-radius: 36px;
   }
 }
+@media (min-width: 75rem) {
+  .hero {
+    max-width: 918px;
+    padding: 24px 24px 24px 64px;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+}
 
 .hero__img-wrapper {
   margin-bottom: 2.5rem;
@@ -71,6 +91,12 @@ body {
 .hero__content-wrapper {
   padding: 0 24px 40px 24px;
   color: #242742;
+}
+@media (min-width: 43.75rem) {
+  .hero__content-wrapper {
+    padding: initial;
+    max-width: 376px;
+  }
 }
 
 .content__title,
@@ -151,30 +177,17 @@ input#email {
   }
 }
 
-.form__btn {
-  background-color: #242742;
-  color: #FFFFFF;
-  width: 100%;
-  border-radius: 8px;
-  padding: 18px 46px 14px 48px;
-}
-@media (min-width: 43.75rem) {
-  .form__btn {
-    padding: 18px 10px 18px 10px;
-  }
-}
-
 .completed {
   max-width: 327px;
   margin: 149px auto 40px auto;
-  display: none;
+  display: block;
 }
 @media (min-width: 43.75rem) {
   .completed {
     background-color: #FFFFFF;
     border-radius: 36px;
     max-width: 504px;
-    padding: 48px 64px 64px 64px;
+    padding: 18px 10px 18px 10px;
   }
 }
 
@@ -189,12 +202,4 @@ input#email {
   .completed__text {
     margin-bottom: 40px;
   }
-}
-
-.completed__btn {
-  background-color: #242742;
-  color: #FFFFFF;
-  width: 100%;
-  border-radius: 8px;
-  padding: 18px 46px 14px 48px;
 }/*# sourceMappingURL=styles.css.map */
