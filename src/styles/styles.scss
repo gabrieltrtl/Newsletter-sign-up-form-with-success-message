@@ -156,7 +156,7 @@ input#email {
 .completed {
   max-width: 327px;
   margin: 149px auto 40px auto;
-  display: block;
+  display: none;
   @include device(tablet) {
     background-color: $neutral-color1;
     border-radius: 36px;

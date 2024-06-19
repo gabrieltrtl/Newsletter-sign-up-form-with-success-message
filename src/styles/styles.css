@@ -180,7 +180,7 @@ input#email {
 .completed {
   max-width: 327px;
   margin: 149px auto 40px auto;
-  display: block;
+  display: none;
 }
 @media (min-width: 43.75rem) {
   .completed {
