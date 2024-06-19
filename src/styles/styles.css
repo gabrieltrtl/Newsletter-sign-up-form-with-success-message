@@ -141,6 +141,10 @@ body {
   margin-right: 16px;
 }
 
+.list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .input__wrapper {
   position: relative;
 }
